@@ -10,7 +10,7 @@ import P "mo:base/Prelude";
 import Debug "mo:base/Debug";
 
 module {
-    public func ParseNat(t : Text, base : Nat) : Result.Result<Nat, Text> {
+    public func Parse(t : Text, base : Nat) : Result.Result<Nat, Text> {
         if (t == "")                     return #err("text must be non-empty");
         if (base < 2 or 36 < base)       return #err("invalid base: " # Nat.toText(base));
 
@@ -27,7 +27,7 @@ module {
         #ok(n);
     };
 
-    public func FormatNat(n : Nat, base : Nat) : Text {
+    public func Format(n : Nat, base : Nat) : Text {
         var s = "";
         var bs : [Nat] = []; 
         var u = n;
