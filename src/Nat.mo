@@ -1,13 +1,13 @@
-import Array "mo:base/Array";
-import Char "mo:base/Char";
-import Nat "mo:base/Nat";
-import Nat8 "mo:base/Nat8";
-import Nat32 "mo:base/Nat32";
-import Result "mo:base/Result";
+import Array "mo:base-0.7.3/Array";
+import Char "mo:base-0.7.3/Char";
+import Nat "mo:base-0.7.3/Nat";
+import Nat8 "mo:base-0.7.3/Nat8";
+import Nat32 "mo:base-0.7.3/Nat32";
+import Result "mo:base-0.7.3/Result";
 
-import P "mo:base/Prelude";
+import P "mo:base-0.7.3/Prelude";
 
-import Debug "mo:base/Debug";
+import Debug "mo:base-0.7.3/Debug";
 
 module {
     public func Parse(t : Text, base : Nat) : Result.Result<Nat, Text> {

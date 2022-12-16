@@ -1,6 +1,6 @@
-import Int "mo:base/Int";
-import Result "mo:base/Result";
-import Text "mo:base/Text";
+import Int "mo:base-0.7.3/Int";
+import Result "mo:base-0.7.3/Result";
+import Text "mo:base-0.7.3/Text";
 
 import FmtNat "Nat"
 
